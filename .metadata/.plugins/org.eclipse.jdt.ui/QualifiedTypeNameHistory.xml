@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TableColumn"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TableView"/>
+    <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="performanceAnalyze.BubbleSort"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="model.Obito"/>
+    <fullyQualifiedTypeName name="controller.ObitoController"/>
+    <fullyQualifiedTypeName name="performanceAnalyze.QuickSort"/>
+</qualifiedTypeNameHistroy>

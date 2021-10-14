@@ -1,0 +1,39 @@
+package performanceAnalyze;
+
+import java.util.List;
+
+import model.Obito;
+
+public class BubbleSort {
+	
+	private long tempoGasto;
+	
+	
+	public List<Obito> retornaOrdenado(List<Obito> obitos){
+		long tinicial = 1;
+		Obito aux;
+		
+		for (int i = 0; i < obitos.size();i++) {
+			for (int j = 0; j < obitos.size() - 1; j++) {
+				if(obitos.get(j).getQuantidade() > obitos.get(j+1).getQuantidade()) {
+					aux = new Obito(obitos.get(j).getMes(), obitos.get(j).getQuantidade());
+					obitos.get(j).setMes(obitos.get(j +1).getMes());
+					obitos.get(j).setQuantidade(obitos.get(j +1).getQuantidade());
+					obitos.get(j+1).setMes(aux.getMes());
+					obitos.get(j+1).setQuantidade(aux.getQuantidade());
+				}
+			}
+				
+		}
+		long tfinal = 2;
+		
+		tempoGasto = tinicial + tfinal;
+		
+		return obitos;
+		
+		
+		
+		
+		
+	}
+}

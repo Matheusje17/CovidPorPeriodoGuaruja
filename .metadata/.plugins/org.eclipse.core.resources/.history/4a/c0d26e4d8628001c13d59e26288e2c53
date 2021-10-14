@@ -1,0 +1,34 @@
+package performanceAnalyze;
+
+import java.util.List;
+
+import model.Obito;
+
+public class InsertionSort {
+	
+	private double tempoGasto;
+	
+	public List<Obito> retornaOrdenado(List<Obito> obitos){
+		long tInicial = System.currentTimeMillis();
+		Obito aux1;
+		Obito aux2;
+		
+		for (int i = 0; i < obitos.size();i++) {
+			aux1 = new Obito(obitos.get(i).getMes(),obitos.get(i).getQuantidade());
+				
+		}
+		long tFinal = System.currentTimeMillis();
+		
+		tempoGasto = tFinal - tInicial;
+		
+		return obitos;
+		
+	}
+	
+	
+	public String getTempo() {
+		
+		String t = String.format("%.7f", tempoGasto);
+		return t;
+	}
+}

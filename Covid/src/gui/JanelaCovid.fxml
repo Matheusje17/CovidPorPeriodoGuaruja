@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.JanelaController">
+   <children>
+      <SplitPane dividerPositions="0.459866220735786" layoutX="20.0" layoutY="40.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tb_Covid" layoutX="-22.0" layoutY="66.0" prefHeight="398.0" prefWidth="282.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="c_Periodo" editable="false" prefWidth="192.0" resizable="false" text="Periodo" />
+                      <TableColumn fx:id="c_Quantidade" editable="false" maxWidth="78.0" prefWidth="78.0" resizable="false" text="Quantidade" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="375.0">
+               <children>
+                  <Label fx:id="lblMetodo" contentDisplay="CENTER" layoutX="98.0" layoutY="60.0" text="Método" textAlignment="CENTER">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+                  <Button fx:id="btnBubbleSort" layoutX="3.0" layoutY="297.0" mnemonicParsing="false" onAction="#listarBubbleSort" text="Bubble Sort" />
+                  <Button fx:id="btnInsertionSort" layoutX="116.0" layoutY="297.0" mnemonicParsing="false" onAction="#listarInsertionSort" text="Insertion Sort" />
+                  <Button fx:id="btnQuickSort" layoutX="245.0" layoutY="297.0" mnemonicParsing="false" onAction="#listarQuickSort" text="Quick Sort" />
+                  <Label fx:id="lblMetodo1" layoutX="15.0" layoutY="154.0" text="TempoGasto(ms):">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTempo" layoutX="150.0" layoutY="151.0" prefHeight="26.0" prefWidth="140.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
